@@ -1,28 +1,31 @@
-Praveen D
-212222240076
-EX. NO.6
-DATE: 21.10.24
-Implementation of Semantic Analysis
-Aim:
-To perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques.
+<H4>Praveen D</H4>
+<H4>212222240076</H4>
+<H4>EX. NO.6</H4>
+<H4>DATE: 29.10.24</H4>
+<H1 ALIGN =CENTER>Implementation of Semantic Analysis</H1>
 
-Algorithm:
-Step 1:
+## Aim: 
+To perform Parts of speech identification and Synonym using Natural Language Processing (NLP) techniques. 
+
+## Algorithm:
+#### Step 1: 
 Import the nltk library.
-
-Step 2:
+#### Step 2: 
 Download the 'punkt', 'wordnet', and 'averaged_perceptron_tagger' resources.
-
-Step 3:
+#### Step 3:
 Accept user input for the text.
-
-Step 4:
+#### Step 4:
 Tokenize the input text into words using the word_tokenize function.
+#### Step 5:
+Iterate through each word in the tokenized text.
+•	Perform part-of-speech tagging on the tokenized words using nltk.pos_tag.
+•	Print each word along with its corresponding part-of-speech tag.
+•	For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word).
+•	Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively.
+•	Print the unique sets of synonyms and antonyms.
 
-Step 5:
-Iterate through each word in the tokenized text. • Perform part-of-speech tagging on the tokenized words using nltk.pos_tag. • Print each word along with its corresponding part-of-speech tag. • For each verb , iterate through its synsets (sets of synonyms) using wordnet.synsets(word). • Extract synonyms and antonyms using lemma.name() and lemma.antonyms()[0].name() respectively. • Print the unique sets of synonyms and antonyms.
-
-Program:
+## Program:
+```
 import nltk
 from nltk.corpus import wordnet
 
@@ -62,6 +65,7 @@ for sentence in sentences:
         synonyms = get_synonyms(verb)
         print(f"Verb: {verb}")
         print(f"Synonyms: {', '.join(synonyms)}\n")
+```
 Output:
 ![378276224-30214ce6-d046-4f71-81e8-1be2a5bc9143](https://github.com/user-attachments/assets/17bde95c-0fd0-4769-92ff-ef59849dad4c)
 
