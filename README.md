@@ -66,9 +66,9 @@ for sentence in sentences:
         print(f"Verb: {verb}")
         print(f"Synonyms: {', '.join(synonyms)}\n")
 ```
-Output:
+## Output:
 ![378276224-30214ce6-d046-4f71-81e8-1be2a5bc9143](https://github.com/user-attachments/assets/17bde95c-0fd0-4769-92ff-ef59849dad4c)
 
 
-Result:
+## Result:
 Thus ,the program to perform the Parts of Speech identification and Synonymis executed sucessfully.
